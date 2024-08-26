@@ -25,6 +25,11 @@ class TodoBook:
     def __init__(self):
         self.todos: dict[int, Todo] = {}
 
+    def add_todo(self, title: str, description: str) -> int:
+        size_dict = len(self.todos) + 1
+        lista_id = [num for num in range(size_dict)]
+        Todo(1, "Tarea 1", "Limpiar")
+
 
 
 
